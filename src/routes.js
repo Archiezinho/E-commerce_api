@@ -32,7 +32,7 @@ router.get('/categories', adsController.getCategories);
 // rotas para adicionar, listar, pegar um unico e modificar os anuncios de produtos
 router.post('/ad/add', auth.private, adsController.addAction);
 router.get('/ad/list', adsController.getList);
-router.get('/ad/item', adsController.getItem);
+router.get('/ad/:id', adsController.getItem);
 router.post('/ad/:id', auth.private, adsController.editAction)
 
 module.exports = router;

@@ -23,8 +23,8 @@ module.exports = {
         //adicionando a categoria dos anuncios
         let adList = []
         for (let i in ads) {
-            const cat = await Category.findById(ads[i].category);
-            adList.push({ ...ads[i], category: cat.slug });
+            const cat =  await Category.findById(ads[i].category);
+            adList.push({ ...ads[i]._doc, category: cat.slug });
         }
 
         res.json({
