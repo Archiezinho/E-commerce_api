@@ -33,7 +33,7 @@ Recursos disponíveis para acesso via API:
 As ações de `listar` permitem o envio dos seguintes parâmetros:
 
 | Parâmetro | Descrição | Valores |
-|---|---|
+|---|---|---|
 | `sort` | Filtra dados em ascendente e descendente. | Valores possiveis: [asc] [dsc] |
 | `offset` | Dita quantos dados serão pulado(Paginação). | Valores possiveis: Números |
 | `limit` | Filtra quantos dados serão mostrados. | Valores possiveis: Números |
